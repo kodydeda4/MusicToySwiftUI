@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3372745D25BB25320054564E /* PianoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372745C25BB25320054564E /* PianoModel.swift */; };
 		3372746025BB25430054564E /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372745F25BB25430054564E /* PianoView.swift */; };
 		3372746325BB25710054564E /* PianoKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372746225BB25710054564E /* PianoKeyModel.swift */; };
 		3372746625BB25800054564E /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372746525BB25800054564E /* PianoKeyView.swift */; };
@@ -34,7 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3372745C25BB25320054564E /* PianoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoModel.swift; sourceTree = "<group>"; };
 		3372745F25BB25430054564E /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
 		3372746225BB25710054564E /* PianoKeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyModel.swift; sourceTree = "<group>"; };
 		3372746525BB25800054564E /* PianoKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				33F8EFBB25BB20E800ADF72C /* Common */,
 				33F8EF9C25BB1F1800ADF72C /* MidiSoundFonts */,
 				33F8EF9925BB1EC800ADF72C /* PianoSound.swift */,
-				3372745C25BB25320054564E /* PianoModel.swift */,
 				3372745F25BB25430054564E /* PianoView.swift */,
 				3372746225BB25710054564E /* PianoKeyModel.swift */,
 				3372746525BB25800054564E /* PianoKeyView.swift */,
@@ -234,7 +231,6 @@
 			files = (
 				33F8EFB825BB20A100ADF72C /* ViewModifier+Extensions.swift in Sources */,
 				3372746925BB258C0054564E /* KeyShape.swift in Sources */,
-				3372745D25BB25320054564E /* PianoModel.swift in Sources */,
 				3372746625BB25800054564E /* PianoKeyView.swift in Sources */,
 				33F8EF8525BB19FE00ADF72C /* ContentView.swift in Sources */,
 				3372746025BB25430054564E /* PianoView.swift in Sources */,
