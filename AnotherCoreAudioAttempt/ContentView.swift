@@ -9,38 +9,20 @@ import SwiftUI
 import MusicTheory
 import ComposableArchitecture
 
-//struct MyScale: Equatable {
-//    let scale: Scale
-//    let octave: Int
-//
-//    var description: String {
-//        scale.description
-//            .filter { !($0 == ",") }
-//    }
-//
-//    var midiValues: [Int] {
-//        let values = scale.pitches(octave: octave).map(\.rawValue)
-//        return Array(values + [values.first! + 12])
-//    }
-//}
-
 
 //MARK:- Root
 
 struct Root {
     struct State {
         // state
-        var scale: Scale { .init(type: scaleType, key: key)}
+        var scale = Scale(type: .major, key: "C")
+        var soundClient = SoundClient(.piano)
+        var octave = 4
+        
         var midiValues: [Int] {
             let values = scale.pitches(octave: octave).map(\.rawValue)
             return Array(values + [values.first! + 12])
         }
-        
-        var octave: Int = 4
-        var key: Key = "C"
-        var scaleType: ScaleType = .major
-        var soundFont: MidiSoundFont = .piano
-        var piano = SoundClient(.piano)
     }
     
     enum Action: Equatable {
@@ -48,7 +30,7 @@ struct Root {
         case changeOctave(Int)
         case changeKey(Key)
         case changeScaleType(ScaleType)
-        case changeSoundFont(MidiSoundFont)
+        case changeSoundFont(SoundFont)
     }
     
     struct Environment {
@@ -67,15 +49,17 @@ extension Root {
             case let .changeOctave(octave):
                 state.octave = octave
                 return .none
+                
             case let .changeKey(key):
-                state.key = key
+                state.scale.key = key
                 return .none
+                
             case let .changeScaleType(scaleType):
-                state.scaleType = scaleType
+                state.scale.type = scaleType
                 return .none
                 
             case let .changeSoundFont(soundFont):
-                state.soundFont = soundFont
+                state.soundClient = SoundClient(soundFont)
                 return .none
             }
         }
@@ -108,7 +92,7 @@ struct RootView: View {
                 HStack {
                     ForEach(viewStore.midiValues, id: \.self) { note in
                         Button(
-                            action: { viewStore.piano.play(note) }
+                            action: { viewStore.soundClient.play(note) }
                         ) {
                             RoundedRectangle(cornerRadius: 4)
                                 .foregroundColor(
@@ -126,10 +110,10 @@ struct RootView: View {
                 ToolbarItem {
                     Picker("SoundFont", selection:
                             viewStore.binding(
-                                get: \.soundFont,
+                                get: \.soundClient.soundFont,
                                 send: Root.Action.changeSoundFont)
                     ) {
-                        ForEach(MidiSoundFont.allCases, id: \.self) { soundFont in
+                        ForEach(SoundFont.allCases, id: \.self) { soundFont in
                             Text(soundFont.rawValue)
                         }
                     }
@@ -148,7 +132,7 @@ struct RootView: View {
                 ToolbarItem {
                     Picker("Key", selection:
                             viewStore.binding(
-                                get: \.key,
+                                get: \.scale.key,
                                 send: Root.Action.changeKey)
                     ) {
                         ForEach(Key.keysWithFlats, id: \.self) { key in
@@ -159,7 +143,7 @@ struct RootView: View {
                 ToolbarItem {
                     Picker("ScaleType", selection:
                             viewStore.binding(
-                                get: \.scaleType,
+                                get: \.scale.type,
                                 send: Root.Action.changeScaleType)
                     ) {
                         ForEach(ScaleType.all, id: \.self) { scaleType in

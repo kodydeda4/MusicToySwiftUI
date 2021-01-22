@@ -8,13 +8,13 @@
 import AVFoundation
 
 struct SoundClient {
-    let midiSoundFont: MidiSoundFont
+    let soundFont: SoundFont
     let audioEngine = AVAudioEngine()
     let unitSampler = AVAudioUnitSampler()
     var volume: Float = 0.5
 
-    init(_ midiSoundFont: MidiSoundFont) {
-        self.midiSoundFont = midiSoundFont
+    init(_ soundFont: SoundFont) {
+        self.soundFont = soundFont
         
         // Setup AudioEngine
         audioEngine.mainMixerNode.volume = volume
@@ -24,7 +24,7 @@ struct SoundClient {
         // Load MidiSoundFont into unitSampler
         if let _ = try? audioEngine.start() {
             try? unitSampler.loadSoundBankInstrument(
-                at: midiSoundFont.url, program: 0,
+                at: soundFont.url, program: 0,
                 bankMSB: UInt8(kAUSampler_DefaultMelodicBankMSB),
                 bankLSB: UInt8(kAUSampler_DefaultBankLSB)
             )
