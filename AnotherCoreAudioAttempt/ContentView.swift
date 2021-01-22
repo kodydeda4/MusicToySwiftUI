@@ -10,6 +10,7 @@ import MusicTheory
 import ComposableArchitecture
 
 
+
 //MARK:- Root
 
 struct Root {
@@ -17,18 +18,17 @@ struct Root {
         // state
         var scale = Scale(type: .major, key: "C")
         var soundClient = SoundClient(.piano)
-        var octave = 4
-        
+            
         var midiValues: [Int] {
-            let values = scale.pitches(octave: octave).map(\.rawValue)
+            let values = scale.pitches(octave: 4).map(\.rawValue)
             return Array(values + [values.first! + 12])
         }
     }
     
     enum Action: Equatable {
         // action
-        case changeOctave(Int)
         case changeKey(Key)
+        case playNote(Int)
         case changeScaleType(ScaleType)
         case changeSoundFont(SoundFont)
     }
@@ -45,11 +45,7 @@ extension Root {
         Reducer { state, action, environment in
             // mutations
             switch action {
-            
-            case let .changeOctave(octave):
-                state.octave = octave
-                return .none
-                
+                            
             case let .changeKey(key):
                 state.scale.key = key
                 return .none
@@ -61,8 +57,13 @@ extension Root {
             case let .changeSoundFont(soundFont):
                 state.soundClient = SoundClient(soundFont)
                 return .none
+                
+            case let .playNote(note):
+                state.soundClient.play(note)
+                return .none
             }
         }
+        .debug()
     )
 }
 
@@ -87,17 +88,13 @@ struct RootView: View {
     
     var body: some View {
         WithViewStore(store) { viewStore in
-            VStack {
-                Text(viewStore.octave.description)
-                
-                HStack {
-                    ForEach(viewStore.midiValues, id: \.self) { note in
-                        Button(action: { viewStore.soundClient.play(note) }) {
-                            RoundedRectangle(cornerRadius: 4)
-                                .foregroundColor([viewStore.midiValues.first, viewStore.midiValues.last].contains(note) ? Color.blue : Color.red)
-                        }
-                        .buttonStyle(PlainButtonStyle())
+            HStack {
+                ForEach(viewStore.midiValues, id: \.self) { note in
+                    Button(action: { viewStore.send(.playNote(note)) }) {
+                        RoundedRectangle(cornerRadius: 4)
+                            .foregroundColor([viewStore.midiValues.first, viewStore.midiValues.last].contains(note) ? Color.blue : Color.red)
                     }
+                    .buttonStyle(PlainButtonStyle())
                 }
             }
             .padding()
@@ -111,17 +108,6 @@ struct RootView: View {
                     ) {
                         ForEach(SoundFont.allCases, id: \.self) { soundFont in
                             Text(soundFont.rawValue)
-                        }
-                    }
-                }
-                ToolbarItem {
-                    Picker("Octave", selection:
-                            viewStore.binding(
-                                get: \.octave,
-                                send: Root.Action.changeOctave)
-                    ) {
-                        ForEach(0..<9) { octave in
-                            Text(octave.description)
                         }
                     }
                 }
