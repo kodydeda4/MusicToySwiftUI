@@ -9,6 +9,15 @@
           "revision": "fd316dd05f02e4ef7ff60f9be0a31b8a24053b1e",
           "version": null
         }
+      },
+      {
+        "package": "MusicTheory",
+        "repositoryURL": "https://github.com/cemolcay/MusicTheory",
+        "state": {
+          "branch": null,
+          "revision": "c98ffac448a3096717a841de31eb4a6cbcd873d4",
+          "version": "1.3.1"
+        }
       }
     ]
   },

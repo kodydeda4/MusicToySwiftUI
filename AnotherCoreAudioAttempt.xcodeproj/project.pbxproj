@@ -7,36 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3372746025BB25430054564E /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372745F25BB25430054564E /* PianoView.swift */; };
-		3372746325BB25710054564E /* PianoKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372746225BB25710054564E /* PianoKeyModel.swift */; };
-		3372746625BB25800054564E /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372746525BB25800054564E /* PianoKeyView.swift */; };
-		3372746925BB258C0054564E /* KeyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3372746825BB258C0054564E /* KeyShape.swift */; };
+		3352F84725BB36AE00D419B5 /* MusicTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 3352F84625BB36AE00D419B5 /* MusicTheory */; };
 		33F8EF8325BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */; };
 		33F8EF8525BB19FE00ADF72C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8425BB19FE00ADF72C /* ContentView.swift */; };
 		33F8EF8725BB19FF00ADF72C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF8625BB19FF00ADF72C /* Assets.xcassets */; };
 		33F8EF8A25BB19FF00ADF72C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF8925BB19FF00ADF72C /* Preview Assets.xcassets */; };
 		33F8EF9525BB1B0A00ADF72C /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F8EF9425BB1B0A00ADF72C /* AudioKit */; };
-		33F8EF9A25BB1EC800ADF72C /* PianoSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF9925BB1EC800ADF72C /* PianoSound.swift */; };
-		33F8EFA925BB1F1800ADF72C /* VL Acoustic Guitar 1.1.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9D25BB1F1800ADF72C /* VL Acoustic Guitar 1.1.sf2 */; };
-		33F8EFAA25BB1F1800ADF72C /* NylonFinger.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9E25BB1F1800ADF72C /* NylonFinger.sf2 */; };
-		33F8EFAB25BB1F1800ADF72C /* Guitar Acoustic (963KB).sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9F25BB1F1800ADF72C /* Guitar Acoustic (963KB).sf2 */; };
+		33F8EF9A25BB1EC800ADF72C /* SoundClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF9925BB1EC800ADF72C /* SoundClient.swift */; };
+		33F8EFAA25BB1F1800ADF72C /* GuitarNylon.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9E25BB1F1800ADF72C /* GuitarNylon.sf2 */; };
+		33F8EFAB25BB1F1800ADF72C /* GuitarAcoustic.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9F25BB1F1800ADF72C /* GuitarAcoustic.sf2 */; };
 		33F8EFAC25BB1F1800ADF72C /* MidiSoundFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */; };
-		33F8EFAD25BB1F1800ADF72C /* Guitar Acoustic melo.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA125BB1F1800ADF72C /* Guitar Acoustic melo.SF2 */; };
-		33F8EFAE25BB1F1800ADF72C /* Donnys Guitar.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA225BB1F1800ADF72C /* Donnys Guitar.SF2 */; };
-		33F8EFAF25BB1F1800ADF72C /* Wah Wah Guitar.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA325BB1F1800ADF72C /* Wah Wah Guitar.sf2 */; };
-		33F8EFB025BB1F1800ADF72C /* emuaps_8mb.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA425BB1F1800ADF72C /* emuaps_8mb.sf2 */; };
-		33F8EFB125BB1F1800ADF72C /* Guitar_Roland Steel Guitar.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA525BB1F1800ADF72C /* Guitar_Roland Steel Guitar.sf2 */; };
-		33F8EFB225BB1F1800ADF72C /* Guitar.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA625BB1F1800ADF72C /* Guitar.SF2 */; };
-		33F8EFB325BB1F1800ADF72C /* Guitar_Studio FG460s II Pro Guitar Pack.SF2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA725BB1F1800ADF72C /* Guitar_Studio FG460s II Pro Guitar Pack.SF2 */; };
-		33F8EFB425BB1F1800ADF72C /* Naturally Decaying B-Guitars.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA825BB1F1800ADF72C /* Naturally Decaying B-Guitars.sf2 */; };
+		33F8EFB025BB1F1800ADF72C /* Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA425BB1F1800ADF72C /* Piano.sf2 */; };
+		33F8EFB425BB1F1800ADF72C /* GuitarElectric.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */; };
 		33F8EFB825BB20A100ADF72C /* ViewModifier+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EFB725BB20A100ADF72C /* ViewModifier+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3372745F25BB25430054564E /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
-		3372746225BB25710054564E /* PianoKeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyModel.swift; sourceTree = "<group>"; };
-		3372746525BB25800054564E /* PianoKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
-		3372746825BB258C0054564E /* KeyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShape.swift; sourceTree = "<group>"; };
 		33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherCoreAudioAttempt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCoreAudioAttemptApp.swift; sourceTree = "<group>"; };
 		33F8EF8425BB19FE00ADF72C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,19 +30,12 @@
 		33F8EF8925BB19FF00ADF72C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33F8EF8B25BB19FF00ADF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F8EF8C25BB19FF00ADF72C /* AnotherCoreAudioAttempt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnotherCoreAudioAttempt.entitlements; sourceTree = "<group>"; };
-		33F8EF9925BB1EC800ADF72C /* PianoSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoSound.swift; sourceTree = "<group>"; };
-		33F8EF9D25BB1F1800ADF72C /* VL Acoustic Guitar 1.1.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VL Acoustic Guitar 1.1.sf2"; sourceTree = "<group>"; };
-		33F8EF9E25BB1F1800ADF72C /* NylonFinger.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NylonFinger.sf2; sourceTree = "<group>"; };
-		33F8EF9F25BB1F1800ADF72C /* Guitar Acoustic (963KB).sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guitar Acoustic (963KB).sf2"; sourceTree = "<group>"; };
+		33F8EF9925BB1EC800ADF72C /* SoundClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClient.swift; sourceTree = "<group>"; };
+		33F8EF9E25BB1F1800ADF72C /* GuitarNylon.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarNylon.sf2; sourceTree = "<group>"; };
+		33F8EF9F25BB1F1800ADF72C /* GuitarAcoustic.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarAcoustic.sf2; sourceTree = "<group>"; };
 		33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiSoundFont.swift; sourceTree = "<group>"; };
-		33F8EFA125BB1F1800ADF72C /* Guitar Acoustic melo.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guitar Acoustic melo.SF2"; sourceTree = "<group>"; };
-		33F8EFA225BB1F1800ADF72C /* Donnys Guitar.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Donnys Guitar.SF2"; sourceTree = "<group>"; };
-		33F8EFA325BB1F1800ADF72C /* Wah Wah Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wah Wah Guitar.sf2"; sourceTree = "<group>"; };
-		33F8EFA425BB1F1800ADF72C /* emuaps_8mb.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = emuaps_8mb.sf2; sourceTree = "<group>"; };
-		33F8EFA525BB1F1800ADF72C /* Guitar_Roland Steel Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guitar_Roland Steel Guitar.sf2"; sourceTree = "<group>"; };
-		33F8EFA625BB1F1800ADF72C /* Guitar.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Guitar.SF2; sourceTree = "<group>"; };
-		33F8EFA725BB1F1800ADF72C /* Guitar_Studio FG460s II Pro Guitar Pack.SF2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Guitar_Studio FG460s II Pro Guitar Pack.SF2"; sourceTree = "<group>"; };
-		33F8EFA825BB1F1800ADF72C /* Naturally Decaying B-Guitars.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Naturally Decaying B-Guitars.sf2"; sourceTree = "<group>"; };
+		33F8EFA425BB1F1800ADF72C /* Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.sf2; sourceTree = "<group>"; };
+		33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarElectric.sf2; sourceTree = "<group>"; };
 		33F8EFB725BB20A100ADF72C /* ViewModifier+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F8EF9525BB1B0A00ADF72C /* AudioKit in Frameworks */,
+				3352F84725BB36AE00D419B5 /* MusicTheory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,15 +71,11 @@
 		33F8EF8125BB19FE00ADF72C /* AnotherCoreAudioAttempt */ = {
 			isa = PBXGroup;
 			children = (
+				33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */,
+				33F8EF9925BB1EC800ADF72C /* SoundClient.swift */,
+				33F8EF8425BB19FE00ADF72C /* ContentView.swift */,
 				33F8EFBB25BB20E800ADF72C /* Common */,
 				33F8EF9C25BB1F1800ADF72C /* MidiSoundFonts */,
-				33F8EF9925BB1EC800ADF72C /* PianoSound.swift */,
-				3372745F25BB25430054564E /* PianoView.swift */,
-				3372746225BB25710054564E /* PianoKeyModel.swift */,
-				3372746525BB25800054564E /* PianoKeyView.swift */,
-				3372746825BB258C0054564E /* KeyShape.swift */,
-				33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */,
-				33F8EF8425BB19FE00ADF72C /* ContentView.swift */,
 				33F8EF8625BB19FF00ADF72C /* Assets.xcassets */,
 				33F8EF8B25BB19FF00ADF72C /* Info.plist */,
 				33F8EF8C25BB19FF00ADF72C /* AnotherCoreAudioAttempt.entitlements */,
@@ -119,18 +95,10 @@
 		33F8EF9C25BB1F1800ADF72C /* MidiSoundFonts */ = {
 			isa = PBXGroup;
 			children = (
-				33F8EFA225BB1F1800ADF72C /* Donnys Guitar.SF2 */,
-				33F8EF9D25BB1F1800ADF72C /* VL Acoustic Guitar 1.1.sf2 */,
-				33F8EF9E25BB1F1800ADF72C /* NylonFinger.sf2 */,
-				33F8EF9F25BB1F1800ADF72C /* Guitar Acoustic (963KB).sf2 */,
-				33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */,
-				33F8EFA125BB1F1800ADF72C /* Guitar Acoustic melo.SF2 */,
-				33F8EFA325BB1F1800ADF72C /* Wah Wah Guitar.sf2 */,
-				33F8EFA425BB1F1800ADF72C /* emuaps_8mb.sf2 */,
-				33F8EFA525BB1F1800ADF72C /* Guitar_Roland Steel Guitar.sf2 */,
-				33F8EFA625BB1F1800ADF72C /* Guitar.SF2 */,
-				33F8EFA725BB1F1800ADF72C /* Guitar_Studio FG460s II Pro Guitar Pack.SF2 */,
-				33F8EFA825BB1F1800ADF72C /* Naturally Decaying B-Guitars.sf2 */,
+				33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */,
+				33F8EF9F25BB1F1800ADF72C /* GuitarAcoustic.sf2 */,
+				33F8EF9E25BB1F1800ADF72C /* GuitarNylon.sf2 */,
+				33F8EFA425BB1F1800ADF72C /* Piano.sf2 */,
 			);
 			path = MidiSoundFonts;
 			sourceTree = "<group>";
@@ -138,6 +106,7 @@
 		33F8EFBB25BB20E800ADF72C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */,
 				33F8EFB725BB20A100ADF72C /* ViewModifier+Extensions.swift */,
 			);
 			path = Common;
@@ -161,6 +130,7 @@
 			name = AnotherCoreAudioAttempt;
 			packageProductDependencies = (
 				33F8EF9425BB1B0A00ADF72C /* AudioKit */,
+				3352F84625BB36AE00D419B5 /* MusicTheory */,
 			);
 			productName = AnotherCoreAudioAttempt;
 			productReference = 33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */;
@@ -191,6 +161,7 @@
 			mainGroup = 33F8EF7625BB19FE00ADF72C;
 			packageReferences = (
 				33F8EF9325BB1B0A00ADF72C /* XCRemoteSwiftPackageReference "AudioKit" */,
+				3352F84525BB36AE00D419B5 /* XCRemoteSwiftPackageReference "MusicTheory" */,
 			);
 			productRefGroup = 33F8EF8025BB19FE00ADF72C /* Products */;
 			projectDirPath = "";
@@ -206,19 +177,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F8EFA925BB1F1800ADF72C /* VL Acoustic Guitar 1.1.sf2 in Resources */,
-				33F8EFAD25BB1F1800ADF72C /* Guitar Acoustic melo.SF2 in Resources */,
-				33F8EFAB25BB1F1800ADF72C /* Guitar Acoustic (963KB).sf2 in Resources */,
-				33F8EFB325BB1F1800ADF72C /* Guitar_Studio FG460s II Pro Guitar Pack.SF2 in Resources */,
+				33F8EFAB25BB1F1800ADF72C /* GuitarAcoustic.sf2 in Resources */,
 				33F8EF8A25BB19FF00ADF72C /* Preview Assets.xcassets in Resources */,
 				33F8EF8725BB19FF00ADF72C /* Assets.xcassets in Resources */,
-				33F8EFAA25BB1F1800ADF72C /* NylonFinger.sf2 in Resources */,
-				33F8EFB425BB1F1800ADF72C /* Naturally Decaying B-Guitars.sf2 in Resources */,
-				33F8EFAE25BB1F1800ADF72C /* Donnys Guitar.SF2 in Resources */,
-				33F8EFB125BB1F1800ADF72C /* Guitar_Roland Steel Guitar.sf2 in Resources */,
-				33F8EFB025BB1F1800ADF72C /* emuaps_8mb.sf2 in Resources */,
-				33F8EFAF25BB1F1800ADF72C /* Wah Wah Guitar.sf2 in Resources */,
-				33F8EFB225BB1F1800ADF72C /* Guitar.SF2 in Resources */,
+				33F8EFAA25BB1F1800ADF72C /* GuitarNylon.sf2 in Resources */,
+				33F8EFB425BB1F1800ADF72C /* GuitarElectric.sf2 in Resources */,
+				33F8EFB025BB1F1800ADF72C /* Piano.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,14 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F8EFB825BB20A100ADF72C /* ViewModifier+Extensions.swift in Sources */,
-				3372746925BB258C0054564E /* KeyShape.swift in Sources */,
-				3372746625BB25800054564E /* PianoKeyView.swift in Sources */,
 				33F8EF8525BB19FE00ADF72C /* ContentView.swift in Sources */,
-				3372746025BB25430054564E /* PianoView.swift in Sources */,
 				33F8EFAC25BB1F1800ADF72C /* MidiSoundFont.swift in Sources */,
-				33F8EF9A25BB1EC800ADF72C /* PianoSound.swift in Sources */,
+				33F8EF9A25BB1EC800ADF72C /* SoundClient.swift in Sources */,
 				33F8EF8325BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift in Sources */,
-				3372746325BB25710054564E /* PianoKeyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +391,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3352F84525BB36AE00D419B5 /* XCRemoteSwiftPackageReference "MusicTheory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cemolcay/MusicTheory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.1;
+			};
+		};
 		33F8EF9325BB1B0A00ADF72C /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit";
@@ -442,6 +410,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3352F84625BB36AE00D419B5 /* MusicTheory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3352F84525BB36AE00D419B5 /* XCRemoteSwiftPackageReference "MusicTheory" */;
+			productName = MusicTheory;
+		};
 		33F8EF9425BB1B0A00ADF72C /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 33F8EF9325BB1B0A00ADF72C /* XCRemoteSwiftPackageReference "AudioKit" */;
