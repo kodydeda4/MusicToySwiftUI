@@ -16,11 +16,11 @@
 		33F8EF8A25BB19FF00ADF72C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF8925BB19FF00ADF72C /* Preview Assets.xcassets */; };
 		33F8EF9525BB1B0A00ADF72C /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 33F8EF9425BB1B0A00ADF72C /* AudioKit */; };
 		33F8EF9A25BB1EC800ADF72C /* SoundClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF9925BB1EC800ADF72C /* SoundClient.swift */; };
-		33F8EFAA25BB1F1800ADF72C /* GuitarNylon.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9E25BB1F1800ADF72C /* GuitarNylon.sf2 */; };
-		33F8EFAB25BB1F1800ADF72C /* GuitarAcoustic.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9F25BB1F1800ADF72C /* GuitarAcoustic.sf2 */; };
+		33F8EFAA25BB1F1800ADF72C /* Nylon Guitar.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9E25BB1F1800ADF72C /* Nylon Guitar.sf2 */; };
+		33F8EFAB25BB1F1800ADF72C /* Acoustic Guitar.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF9F25BB1F1800ADF72C /* Acoustic Guitar.sf2 */; };
 		33F8EFAC25BB1F1800ADF72C /* SoundFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EFA025BB1F1800ADF72C /* SoundFont.swift */; };
 		33F8EFB025BB1F1800ADF72C /* Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA425BB1F1800ADF72C /* Piano.sf2 */; };
-		33F8EFB425BB1F1800ADF72C /* GuitarElectric.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */; };
+		33F8EFB425BB1F1800ADF72C /* Electric Guitar.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA825BB1F1800ADF72C /* Electric Guitar.sf2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +33,11 @@
 		33F8EF8B25BB19FF00ADF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33F8EF8C25BB19FF00ADF72C /* AnotherCoreAudioAttempt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnotherCoreAudioAttempt.entitlements; sourceTree = "<group>"; };
 		33F8EF9925BB1EC800ADF72C /* SoundClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClient.swift; sourceTree = "<group>"; };
-		33F8EF9E25BB1F1800ADF72C /* GuitarNylon.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarNylon.sf2; sourceTree = "<group>"; };
-		33F8EF9F25BB1F1800ADF72C /* GuitarAcoustic.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarAcoustic.sf2; sourceTree = "<group>"; };
+		33F8EF9E25BB1F1800ADF72C /* Nylon Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nylon Guitar.sf2"; sourceTree = "<group>"; };
+		33F8EF9F25BB1F1800ADF72C /* Acoustic Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acoustic Guitar.sf2"; sourceTree = "<group>"; };
 		33F8EFA025BB1F1800ADF72C /* SoundFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundFont.swift; sourceTree = "<group>"; };
 		33F8EFA425BB1F1800ADF72C /* Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.sf2; sourceTree = "<group>"; };
-		33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarElectric.sf2; sourceTree = "<group>"; };
+		33F8EFA825BB1F1800ADF72C /* Electric Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Electric Guitar.sf2"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +97,9 @@
 		33F8EF9C25BB1F1800ADF72C /* SoundFonts */ = {
 			isa = PBXGroup;
 			children = (
-				33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */,
-				33F8EF9F25BB1F1800ADF72C /* GuitarAcoustic.sf2 */,
-				33F8EF9E25BB1F1800ADF72C /* GuitarNylon.sf2 */,
+				33F8EFA825BB1F1800ADF72C /* Electric Guitar.sf2 */,
+				33F8EF9F25BB1F1800ADF72C /* Acoustic Guitar.sf2 */,
+				33F8EF9E25BB1F1800ADF72C /* Nylon Guitar.sf2 */,
 				33F8EFA425BB1F1800ADF72C /* Piano.sf2 */,
 			);
 			path = SoundFonts;
@@ -181,11 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F8EFAB25BB1F1800ADF72C /* GuitarAcoustic.sf2 in Resources */,
+				33F8EFAB25BB1F1800ADF72C /* Acoustic Guitar.sf2 in Resources */,
 				33F8EF8A25BB19FF00ADF72C /* Preview Assets.xcassets in Resources */,
 				33F8EF8725BB19FF00ADF72C /* Assets.xcassets in Resources */,
-				33F8EFAA25BB1F1800ADF72C /* GuitarNylon.sf2 in Resources */,
-				33F8EFB425BB1F1800ADF72C /* GuitarElectric.sf2 in Resources */,
+				33F8EFAA25BB1F1800ADF72C /* Nylon Guitar.sf2 in Resources */,
+				33F8EFB425BB1F1800ADF72C /* Electric Guitar.sf2 in Resources */,
 				33F8EFB025BB1F1800ADF72C /* Piano.sf2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

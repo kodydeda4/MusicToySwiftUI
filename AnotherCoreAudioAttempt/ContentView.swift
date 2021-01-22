@@ -10,7 +10,6 @@ import MusicTheory
 import ComposableArchitecture
 
 
-
 //MARK:- Root
 
 struct Root {
@@ -83,6 +82,7 @@ extension Root {
 
 // MARK:- RootView
 
+
 struct RootView: View {
     let store: Store<Root.State, Root.Action>
     
@@ -92,7 +92,12 @@ struct RootView: View {
                 ForEach(viewStore.midiValues, id: \.self) { note in
                     Button(action: { viewStore.send(.playNote(note)) }) {
                         RoundedRectangle(cornerRadius: 4)
-                            .foregroundColor([viewStore.midiValues.first, viewStore.midiValues.last].contains(note) ? Color.blue : Color.red)
+                            .foregroundColor([
+                                viewStore.midiValues.first,
+                                 viewStore.midiValues.last].contains(note)
+                                    ? Color.secondary
+                                    : Color.primary
+                            )
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
