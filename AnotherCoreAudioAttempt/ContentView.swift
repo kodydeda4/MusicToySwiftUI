@@ -89,16 +89,12 @@ struct RootView: View {
         WithViewStore(store) { viewStore in
             VStack {
                 Text(viewStore.octave.description)
+                
                 HStack {
                     ForEach(viewStore.midiValues, id: \.self) { note in
-                        Button(
-                            action: { viewStore.soundClient.play(note) }
-                        ) {
+                        Button(action: { viewStore.soundClient.play(note) }) {
                             RoundedRectangle(cornerRadius: 4)
-                                .foregroundColor(
-                                    [viewStore.midiValues.first, viewStore.midiValues.last]
-                                        .contains(note) ? Color.blue : Color.red
-                                )
+                                .foregroundColor([viewStore.midiValues.first, viewStore.midiValues.last].contains(note) ? Color.blue : Color.red)
                         }
                         .buttonStyle(PlainButtonStyle())
                     }
