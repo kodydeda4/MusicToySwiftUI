@@ -21,7 +21,7 @@ struct SoundClient {
         audioEngine.attach(unitSampler)
         audioEngine.connect(unitSampler, to: audioEngine.mainMixerNode, format: nil)
         
-        // Load MidiSoundFont into unitSampler
+        // Load SoundFont into UnitSampler
         if let _ = try? audioEngine.start() {
             try? unitSampler.loadSoundBankInstrument(
                 at: soundFont.url, program: 0,
