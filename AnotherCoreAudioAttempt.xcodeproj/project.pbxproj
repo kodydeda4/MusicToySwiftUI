@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331EF31C25BB4F3500D812C7 /* MyScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EF31B25BB4F3500D812C7 /* MyScale.swift */; };
+		331EF32025BB501E00D812C7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 331EF31F25BB501E00D812C7 /* ComposableArchitecture */; };
 		3352F84725BB36AE00D419B5 /* MusicTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 3352F84625BB36AE00D419B5 /* MusicTheory */; };
 		33F8EF8325BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */; };
 		33F8EF8525BB19FE00ADF72C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8425BB19FE00ADF72C /* ContentView.swift */; };
@@ -19,10 +21,10 @@
 		33F8EFAC25BB1F1800ADF72C /* MidiSoundFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */; };
 		33F8EFB025BB1F1800ADF72C /* Piano.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA425BB1F1800ADF72C /* Piano.sf2 */; };
 		33F8EFB425BB1F1800ADF72C /* GuitarElectric.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */; };
-		33F8EFB825BB20A100ADF72C /* ViewModifier+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EFB725BB20A100ADF72C /* ViewModifier+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331EF31B25BB4F3500D812C7 /* MyScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScale.swift; sourceTree = "<group>"; };
 		33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherCoreAudioAttempt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCoreAudioAttemptApp.swift; sourceTree = "<group>"; };
 		33F8EF8425BB19FE00ADF72C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,7 +38,6 @@
 		33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MidiSoundFont.swift; sourceTree = "<group>"; };
 		33F8EFA425BB1F1800ADF72C /* Piano.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Piano.sf2; sourceTree = "<group>"; };
 		33F8EFA825BB1F1800ADF72C /* GuitarElectric.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = GuitarElectric.sf2; sourceTree = "<group>"; };
-		33F8EFB725BB20A100ADF72C /* ViewModifier+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			files = (
 				33F8EF9525BB1B0A00ADF72C /* AudioKit in Frameworks */,
 				3352F84725BB36AE00D419B5 /* MusicTheory in Frameworks */,
+				331EF32025BB501E00D812C7 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */,
-				33F8EF9925BB1EC800ADF72C /* SoundClient.swift */,
 				33F8EF8425BB19FE00ADF72C /* ContentView.swift */,
 				33F8EFBB25BB20E800ADF72C /* Common */,
 				33F8EF9C25BB1F1800ADF72C /* MidiSoundFonts */,
@@ -80,6 +81,7 @@
 				33F8EF8B25BB19FF00ADF72C /* Info.plist */,
 				33F8EF8C25BB19FF00ADF72C /* AnotherCoreAudioAttempt.entitlements */,
 				33F8EF8825BB19FF00ADF72C /* Preview Content */,
+				331EF31B25BB4F3500D812C7 /* MyScale.swift */,
 			);
 			path = AnotherCoreAudioAttempt;
 			sourceTree = "<group>";
@@ -106,8 +108,8 @@
 		33F8EFBB25BB20E800ADF72C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				33F8EF9925BB1EC800ADF72C /* SoundClient.swift */,
 				33F8EFA025BB1F1800ADF72C /* MidiSoundFont.swift */,
-				33F8EFB725BB20A100ADF72C /* ViewModifier+Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -131,6 +133,7 @@
 			packageProductDependencies = (
 				33F8EF9425BB1B0A00ADF72C /* AudioKit */,
 				3352F84625BB36AE00D419B5 /* MusicTheory */,
+				331EF31F25BB501E00D812C7 /* ComposableArchitecture */,
 			);
 			productName = AnotherCoreAudioAttempt;
 			productReference = 33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */;
@@ -162,6 +165,7 @@
 			packageReferences = (
 				33F8EF9325BB1B0A00ADF72C /* XCRemoteSwiftPackageReference "AudioKit" */,
 				3352F84525BB36AE00D419B5 /* XCRemoteSwiftPackageReference "MusicTheory" */,
+				331EF31E25BB501E00D812C7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 33F8EF8025BB19FE00ADF72C /* Products */;
 			projectDirPath = "";
@@ -193,9 +197,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33F8EFB825BB20A100ADF72C /* ViewModifier+Extensions.swift in Sources */,
 				33F8EF8525BB19FE00ADF72C /* ContentView.swift in Sources */,
 				33F8EFAC25BB1F1800ADF72C /* MidiSoundFont.swift in Sources */,
+				331EF31C25BB4F3500D812C7 /* MyScale.swift in Sources */,
 				33F8EF9A25BB1EC800ADF72C /* SoundClient.swift in Sources */,
 				33F8EF8325BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift in Sources */,
 			);
@@ -391,6 +395,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		331EF31E25BB501E00D812C7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
 		3352F84525BB36AE00D419B5 /* XCRemoteSwiftPackageReference "MusicTheory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/cemolcay/MusicTheory";
@@ -410,6 +422,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		331EF31F25BB501E00D812C7 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 331EF31E25BB501E00D812C7 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
 		3352F84625BB36AE00D419B5 /* MusicTheory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3352F84525BB36AE00D419B5 /* XCRemoteSwiftPackageReference "MusicTheory" */;
