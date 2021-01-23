@@ -13,9 +13,9 @@ A MIDI instrument for playing scales.
 
 ## Built With
 
-* [MusicTheory Library](https://github.com/cemolcay/MusicTheory)
-* [AudioKit v5](https://github.com/AudioKit/AudioKit)
-* [TCA Architecture](https://github.com/pointfreeco/swift-composable-architecture)
+* [cemolcay/MusicTheory](https://github.com/cemolcay/MusicTheory)
+* [AudioKit/AudioKit v5](https://github.com/AudioKit/AudioKit)
+* [pointfreeco/TCA Architecture](https://github.com/pointfreeco/swift-composable-architecture)
 
 ## Author
 
