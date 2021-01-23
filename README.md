@@ -4,7 +4,7 @@ A MIDI instrument for playing scales.
 
 ## Features
 
-* Multiple instruments (SoundFonts)
+* Multiple instruments
 * Lots of scales
 * Simple UI
 
