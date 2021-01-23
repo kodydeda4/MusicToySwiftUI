@@ -1,6 +1,6 @@
 //
 //  RootState.swift
-//  AnotherCoreAudioAttempt
+//  MusicToySwiftUI
 //
 //  Created by Kody Deda on 1/22/21.
 //
@@ -8,7 +8,6 @@
 import SwiftUI
 import MusicTheory
 import ComposableArchitecture
-
 
 //MARK:- Root
 

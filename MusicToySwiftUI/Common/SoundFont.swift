@@ -1,6 +1,6 @@
 //
 //  SoundFont.swift
-//  AnotherCoreAudioAttempt
+//  MusicToySwiftUI
 //
 //  Created by Kody Deda on 1/20/21.
 //

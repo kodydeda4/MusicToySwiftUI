@@ -1,6 +1,6 @@
 //
 //  RootView.swift
-//  AnotherCoreAudioAttempt
+//  MusicToySwiftUI
 //
 //  Created by Kody Deda on 1/22/21.
 //
@@ -11,6 +11,7 @@ import MusicTheory
 
 struct RootView: View {
     let store: Store<Root.State, Root.Action>
+    
     
     var body: some View {
         WithViewStore(store) { viewStore in
@@ -33,7 +34,7 @@ struct RootView: View {
             .toolbar {
                 ToolbarItem {
                     Picker("SoundFont", selection:
-                            viewStore.binding(
+                            viewStore.binding(  
                                 get: \.soundClient.soundFont,
                                 send: Root.Action.changeSoundFont)
                     ) {

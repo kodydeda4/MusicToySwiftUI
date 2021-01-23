@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		331EF31C25BB4F3500D812C7 /* MyScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331EF31B25BB4F3500D812C7 /* MyScale.swift */; };
 		331EF32025BB501E00D812C7 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 331EF31F25BB501E00D812C7 /* ComposableArchitecture */; };
 		3352F84725BB36AE00D419B5 /* MusicTheory in Frameworks */ = {isa = PBXBuildFile; productRef = 3352F84625BB36AE00D419B5 /* MusicTheory */; };
 		33643D7225BB7C8100E4A39A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33643D7125BB7C8100E4A39A /* RootView.swift */; };
-		33F8EF8325BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */; };
+		33F8EF8325BB19FE00ADF72C /* MusicToySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8225BB19FE00ADF72C /* MusicToySwiftUIApp.swift */; };
 		33F8EF8525BB19FE00ADF72C /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8EF8425BB19FE00ADF72C /* RootState.swift */; };
 		33F8EF8725BB19FF00ADF72C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF8625BB19FF00ADF72C /* Assets.xcassets */; };
 		33F8EF8A25BB19FF00ADF72C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F8EF8925BB19FF00ADF72C /* Preview Assets.xcassets */; };
@@ -25,15 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		331EF31B25BB4F3500D812C7 /* MyScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScale.swift; sourceTree = "<group>"; };
 		33643D7125BB7C8100E4A39A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotherCoreAudioAttempt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherCoreAudioAttemptApp.swift; sourceTree = "<group>"; };
+		33F8EF7F25BB19FE00ADF72C /* MusicToySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicToySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F8EF8225BB19FE00ADF72C /* MusicToySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicToySwiftUIApp.swift; sourceTree = "<group>"; };
 		33F8EF8425BB19FE00ADF72C /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		33F8EF8625BB19FF00ADF72C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33F8EF8925BB19FF00ADF72C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33F8EF8B25BB19FF00ADF72C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33F8EF8C25BB19FF00ADF72C /* AnotherCoreAudioAttempt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnotherCoreAudioAttempt.entitlements; sourceTree = "<group>"; };
+		33F8EF8C25BB19FF00ADF72C /* MusicToySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MusicToySwiftUI.entitlements; sourceTree = "<group>"; };
 		33F8EF9925BB1EC800ADF72C /* SoundClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClient.swift; sourceTree = "<group>"; };
 		33F8EF9E25BB1F1800ADF72C /* Nylon Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nylon Guitar.sf2"; sourceTree = "<group>"; };
 		33F8EF9F25BB1F1800ADF72C /* Acoustic Guitar.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acoustic Guitar.sf2"; sourceTree = "<group>"; };
@@ -75,7 +73,7 @@
 		33F8EF7625BB19FE00ADF72C = {
 			isa = PBXGroup;
 			children = (
-				33F8EF8125BB19FE00ADF72C /* AnotherCoreAudioAttempt */,
+				33F8EF8125BB19FE00ADF72C /* MusicToySwiftUI */,
 				33F8EF8025BB19FE00ADF72C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,26 +81,25 @@
 		33F8EF8025BB19FE00ADF72C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */,
+				33F8EF7F25BB19FE00ADF72C /* MusicToySwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		33F8EF8125BB19FE00ADF72C /* AnotherCoreAudioAttempt */ = {
+		33F8EF8125BB19FE00ADF72C /* MusicToySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				33F8EF8225BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift */,
+				33F8EF8225BB19FE00ADF72C /* MusicToySwiftUIApp.swift */,
 				33643D6F25BB7C6D00E4A39A /* State */,
 				33643D7025BB7C7200E4A39A /* View */,
 				33F8EFBB25BB20E800ADF72C /* Common */,
 				33F8EF9C25BB1F1800ADF72C /* SoundFonts */,
 				33F8EF8625BB19FF00ADF72C /* Assets.xcassets */,
 				33F8EF8B25BB19FF00ADF72C /* Info.plist */,
-				33F8EF8C25BB19FF00ADF72C /* AnotherCoreAudioAttempt.entitlements */,
+				33F8EF8C25BB19FF00ADF72C /* MusicToySwiftUI.entitlements */,
 				33F8EF8825BB19FF00ADF72C /* Preview Content */,
-				331EF31B25BB4F3500D812C7 /* MyScale.swift */,
 			);
-			path = AnotherCoreAudioAttempt;
+			path = MusicToySwiftUI;
 			sourceTree = "<group>";
 		};
 		33F8EF8825BB19FF00ADF72C /* Preview Content */ = {
@@ -136,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		33F8EF7E25BB19FE00ADF72C /* AnotherCoreAudioAttempt */ = {
+		33F8EF7E25BB19FE00ADF72C /* MusicToySwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33F8EF8F25BB19FF00ADF72C /* Build configuration list for PBXNativeTarget "AnotherCoreAudioAttempt" */;
+			buildConfigurationList = 33F8EF8F25BB19FF00ADF72C /* Build configuration list for PBXNativeTarget "MusicToySwiftUI" */;
 			buildPhases = (
 				33F8EF7B25BB19FE00ADF72C /* Sources */,
 				33F8EF7C25BB19FE00ADF72C /* Frameworks */,
@@ -148,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = AnotherCoreAudioAttempt;
+			name = MusicToySwiftUI;
 			packageProductDependencies = (
 				33F8EF9425BB1B0A00ADF72C /* AudioKit */,
 				3352F84625BB36AE00D419B5 /* MusicTheory */,
 				331EF31F25BB501E00D812C7 /* ComposableArchitecture */,
 			);
 			productName = AnotherCoreAudioAttempt;
-			productReference = 33F8EF7F25BB19FE00ADF72C /* AnotherCoreAudioAttempt.app */;
+			productReference = 33F8EF7F25BB19FE00ADF72C /* MusicToySwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 33F8EF7A25BB19FE00ADF72C /* Build configuration list for PBXProject "AnotherCoreAudioAttempt" */;
+			buildConfigurationList = 33F8EF7A25BB19FE00ADF72C /* Build configuration list for PBXProject "MusicToySwiftUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33F8EF7E25BB19FE00ADF72C /* AnotherCoreAudioAttempt */,
+				33F8EF7E25BB19FE00ADF72C /* MusicToySwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -219,9 +216,8 @@
 				33F8EF8525BB19FE00ADF72C /* RootState.swift in Sources */,
 				33F8EFAC25BB1F1800ADF72C /* SoundFont.swift in Sources */,
 				33643D7225BB7C8100E4A39A /* RootView.swift in Sources */,
-				331EF31C25BB4F3500D812C7 /* MyScale.swift in Sources */,
 				33F8EF9A25BB1EC800ADF72C /* SoundClient.swift in Sources */,
-				33F8EF8325BB19FE00ADF72C /* AnotherCoreAudioAttemptApp.swift in Sources */,
+				33F8EF8325BB19FE00ADF72C /* MusicToySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,20 +344,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AnotherCoreAudioAttempt/AnotherCoreAudioAttempt.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MusicToySwiftUI/MusicToySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"AnotherCoreAudioAttempt/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MusicToySwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = W6LQK45783;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AnotherCoreAudioAttempt/Info.plist;
+				INFOPLIST_FILE = MusicToySwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kswift.AnotherCoreAudioAttempt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kswift.MusicToySwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -372,20 +368,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AnotherCoreAudioAttempt/AnotherCoreAudioAttempt.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MusicToySwiftUI/MusicToySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"AnotherCoreAudioAttempt/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MusicToySwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = W6LQK45783;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AnotherCoreAudioAttempt/Info.plist;
+				INFOPLIST_FILE = MusicToySwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kswift.AnotherCoreAudioAttempt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kswift.MusicToySwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -394,7 +390,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33F8EF7A25BB19FE00ADF72C /* Build configuration list for PBXProject "AnotherCoreAudioAttempt" */ = {
+		33F8EF7A25BB19FE00ADF72C /* Build configuration list for PBXProject "MusicToySwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33F8EF8D25BB19FF00ADF72C /* Debug */,
@@ -403,7 +399,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33F8EF8F25BB19FF00ADF72C /* Build configuration list for PBXNativeTarget "AnotherCoreAudioAttempt" */ = {
+		33F8EF8F25BB19FF00ADF72C /* Build configuration list for PBXNativeTarget "MusicToySwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33F8EF9025BB19FF00ADF72C /* Debug */,

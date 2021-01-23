@@ -1,6 +1,6 @@
 //
 //  SoundClient.swift
-//  AnotherCoreAudioAttempt
+//  MusicToySwiftUI
 //
 //  Created by Kody Deda on 1/22/21.
 //
