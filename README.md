@@ -2,7 +2,7 @@
 A MIDI instrument for playing scales.
 
 
-[![Everything Is AWESOME](https://user-images.githubusercontent.com/45678211/104971423-be845780-59bc-11eb-81af-3561ab43f4d8.png)](https://www.youtube.com/watch?v=kUl6wEir9ZI&feature=youtu.be)
+[![Everything Is AWESOME](https://user-images.githubusercontent.com/45678211/105606262-4d4ef680-5d66-11eb-88a3-210e65526d98.png)](https://www.youtube.com/watch?v=kUl6wEir9ZI&feature=youtu.be)
 *YouTube Video Demo*
 
 ## Features
