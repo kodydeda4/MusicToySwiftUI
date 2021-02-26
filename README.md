@@ -1,4 +1,4 @@
-# 🎹 MusicToySwiftUI | 2021
+# 🎹 MusicToy | 2021
 A MIDI instrument for playing scales.
 
 
